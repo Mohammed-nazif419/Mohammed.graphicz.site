@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nazif Graphicz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("nav-menu");
+  menu.classList.toggle("show");
+}
+</script>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff6600;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: url('https://via.placeholder.com/1500x600?text=Nazif+Graphics') center/cover no-repeat;
+  color: white;
+  background-blend-mode: overlay;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  background: #ff6600;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.services {
+  padding: 60px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.service-card {
+  background: #f9f9f9;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+  background: #eee;
+}
+
+.contact form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input, .contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  background: #000;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background: #000;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+</style>
+<body>
+  <header>
+    <div class="logo"><img src="Nazif Graphicz.jpg"
+      width="50px";> <h5><b>NAZIF GRAPHICZ</b></h5>    
+    </div>
+     <div class="menu-toggle" onclick="toggleMenu()"><ahref="Nazif Graphicz.html">☰</a></div>
+    <nav id="nav-menu">
+      <a href="Nazif Graphicz.html">Home</a>
+      <a href="Nazif Graphicz.html">services</a>
+      <a href="form">Contact</a>
+    </nav>
+    </header>
+  <section id="home" class="hero">
+    <h1>Creative Designs that Speak!</h1>
+    <p>We turn ideas into stunning visuals. Let's make your brand unforgettable.</p>
+    <a href="#contact" class="btn">Get in Touch</a>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="service-card">
+        <h3>Logo Design</h3>
+        <p>Unique and memorable logos tailored to your brand.</p>
+      </div>
+      <div class="service-card">
+        <h3>Flyer & Poster Design</h3>
+        <p>Eye-catching promotional materials that make impact.</p>
+      </div>
+      <div class="service-card">
+        <h3>Brand Identity</h3>
+        <p>Complete branding solutions for businesses and events.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form action="tiktok.com/@nazif.graphicz">
+      <input type="text" placeholder="Your Name" required/>
+      <input type="email" placeholder="Your Email" required/>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nazif Graphicz. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
